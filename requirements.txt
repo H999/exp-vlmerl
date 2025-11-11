@@ -1,0 +1,10 @@
+accelerate
+bitsandbytes
+einops
+gymnasium[mujoco]
+opencv-python
+pydantic
+stable-baselines3
+tensorboard
+tensordict
+transformers

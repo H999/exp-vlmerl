@@ -1,0 +1,18 @@
+services:
+  research-vlm-ea-rl:
+    image: pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["0"]
+              capabilities:
+                - gpu
+                - utility
+                - compute
+    restart: unless-stopped
+    entrypoint: "bash"
+    volumes:
+      - ./:/workspace
+    tty: true

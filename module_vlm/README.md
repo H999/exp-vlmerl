@@ -1,0 +1,1 @@
+Currently, only CLIP model in the original repository [`vlmrm`](https://github.com/AlignmentResearch/vlmrm) have been converted, using SigLIP and Hugging Face's `AutoModel` in [`reward_model.py`](reward_model.py).
